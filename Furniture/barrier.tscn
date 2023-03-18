@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://k7npto6xy2xp"]
+
+[ext_resource type="Texture2D" uid="uid://ury8dosptop4" path="res://Art/tiles_packed.png" id="1_pmxxg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwgf5"]
+size = Vector2(18, 18)
+
+[node name="Barrier" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_jwgf5")
+
+[node name="TilesPacked" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, -1)
+texture = ExtResource("1_pmxxg")
+region_enabled = true
+region_rect = Rect2(288, 126, 18, 18)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://da58logixumpt"]
+
+[ext_resource type="Script" path="res://Furniture/ending_flag.gd" id="1_uitp1"]
+[ext_resource type="Texture2D" uid="uid://ury8dosptop4" path="res://Art/tiles_packed.png" id="2_8u8br"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8a1dc"]
+size = Vector2(18, 34)
+
+[node name="EndingFlag" type="Area2D"]
+script = ExtResource("1_uitp1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -7)
+shape = SubResource("RectangleShape2D_8a1dc")
+
+[node name="TilesPacked" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, -8)
+texture = ExtResource("2_8u8br")
+region_enabled = true
+region_rect = Rect2(198, 90, 18, 36)

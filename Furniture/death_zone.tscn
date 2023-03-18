@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkq7d27kb3xmd"]
+
+[ext_resource type="Texture2D" uid="uid://ury8dosptop4" path="res://Art/tiles_packed.png" id="1_4fybb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_06glv"]
+size = Vector2(56, 20)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r5un8"]
+
+[node name="DeathZone" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(24, 26)
+shape = SubResource("RectangleShape2D_06glv")
+
+[node name="TilesPacked" type="Sprite2D" parent="."]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_r5un8")
+position = Vector2(23, 23)
+texture = ExtResource("1_4fybb")
+region_enabled = true
+region_rect = Rect2(233.702, 126.189, 54.3225, 14.7292)

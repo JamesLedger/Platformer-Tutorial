@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx4yc6t545bby"]
+
+[ext_resource type="Texture2D" uid="uid://cadk76kqqxxth" path="res://Art/sand_packed.png" id="1_0h3r5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4vsf"]
+size = Vector2(18, 18)
+
+[node name="Block" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_r4vsf")
+
+[node name="SandPacked" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 8)
+texture = ExtResource("1_0h3r5")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 18)
